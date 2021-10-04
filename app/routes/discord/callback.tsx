@@ -28,7 +28,7 @@ export const loader: LoaderFunction = async ({request}) => {
 
     url.searchParams.set(
       'message',
-      `✅ Sucessfully connected your KCD account with ${discordMember.user.username} on discord.`,
+      `✅ Successfully connected your KCD account with ${discordMember.user.username} on discord.`,
     )
     return redirect(url.toString())
   } catch (error: unknown) {
